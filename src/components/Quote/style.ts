@@ -5,6 +5,8 @@ export const Container = styled.div`
   position: relative;
   padding-left: 15px;
 
+  cursor: default;
+
   &::after {
     content: "";
     position: absolute;

@@ -6,8 +6,13 @@ import { quotesAuthor } from "../../Data/quotes";
 
 import * as Styled from "./style";
 
+type PropsQuote = {
+  text: string,
+  author: string
+}
+
 export default function ListQuote() {
-  const [listQuote, setListQuote] = useState<object>([]);
+  const [listQuote, setListQuote] = useState<PropsQuote[]>([]);
   const [backPage, setBackPage] = useState(false);
   const { author } = useParams();
 
@@ -24,6 +29,8 @@ export default function ListQuote() {
     setBackPage(true);
     <Navigate to='/' replace={true}/>
   }
+
+  console.log(listQuote)
 
   return (
     <Styled.Container>
