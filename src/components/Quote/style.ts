@@ -15,4 +15,14 @@ export const Container = styled.div`
 
     background-color: #f7df94;
   }
+
+  @media (max-width: 820px) {
+    &::after {
+      left: -20px;
+    }
+  }
+
+  @media (max-width: 520px) {
+    font-size: 1.4em;
+  }
 `;

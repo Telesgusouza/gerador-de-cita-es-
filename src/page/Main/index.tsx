@@ -5,7 +5,7 @@ export default function CurrentQuote() {
  
   return (
     <div>
-      <Main newQuote />
+      <Main />
     </div>
   );
 }

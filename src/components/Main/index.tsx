@@ -13,7 +13,7 @@ type propsQuote = {
   author: string;
 };
 
-export default function Main({ newQuote }: any) {
+export default function Main() {
   const [currentQuote, setCurrentQuote] = useState<propsQuote>({
     text: "",
     author: "",
